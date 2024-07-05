@@ -167,8 +167,8 @@ html {
 }
 
 .sobremi .contenido-sobremi p {
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 22px;
+    line-height: 34px;
 
 
 }
@@ -176,7 +176,7 @@ html {
 .sobremi .contenido-sobremi p span {
     font-weight: bold;
     color: #e6aa2b;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .sobremi .fila {
@@ -680,6 +680,7 @@ html {
 
 .portafolio .galeria .proyecto img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
