@@ -142,13 +142,15 @@ html {
 
 /*Contenido sobre mi*/
 .sobremi {
-    background: #EB5757;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* background: #EB5757;  
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  
+    background: linear-gradient(to right, #000000, #EB5757); */
     
-
+    background-color: #070707;
     color: #fff;
     padding: 50px 20px;
+
+  
 }
 
 .sobremi .contenido-sobremi {
@@ -236,21 +238,47 @@ html {
 
 .sobremi .button {
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color:rgb(231, 29, 29);
     display: block;
-    width: fit-content;
+    width: 16%;
+    height: 20%;
     margin: 20px auto;
-    padding: 10px 22px;
+    padding: 15px 10px;
     font-size: 16px;
     position: relative;
-    color: antiquewhite;
-    z-index: 10;
+    outline: none;
+    border: none;
+    color: rgb(255, 254, 254);
+    border-radius: 16px;
+    z-index: 0;
+  
+
 
 }
 
+.sobremi .button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(255,5,66,1) 18%,
+        rgb(63, 236, 10) 100%
+
+    );
+    filter: blur(15px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+   
+}
+
+
+
 .sobremi .button:hover{
-    background-color: rgb(7, 90, 90);
+    background-color: rgb(230, 207, 207);
+
 }
 
 .sobremi .contenido-sobremi a {
@@ -674,6 +702,7 @@ html {
     height: fit-content;
     margin: 10px;
     cursor: pointer;
+  
 }
 
 .portafolio .galeria .proyecto img {
@@ -696,7 +725,7 @@ html {
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
-
+   
 }
 
 .portafolio .galeria .proyecto .overlay h3 {
@@ -719,6 +748,70 @@ html {
     font-weight: bold;
     color: #030303;
 }
+
+.portafolio .galeria .proyecto button{
+  border-radius: 18px;
+  width: 110px;
+  height: 35px;
+  position: relative;
+  margin-left: 35%;
+  margin-top: 10%;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  
+  
+  background-color: #29032b;
+ 
+}
+
+.portafolio .galeria .proyecto button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(255,5,66,1) 18%,
+        rgb(63, 236, 10) 100%
+
+    );
+    filter: blur(15px);
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    
+    
+
+}
+
+/*.portafolio .galeria .proyecto button::before{
+    content: "";
+    background: radial-gradient(
+        45deg,
+        #EB5757,#b12a16,#51ac44,#dfcfbd,
+        #18cedb,#2a1ce9,#d8d518,#b40c60  
+    );
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 0;
+    width: calc(70px + 50px);
+    height: calc(110px + 50px);
+    filter: blur(8px);
+   
+    transition: opacity .3s ease-in-out;
+    border-radius: 8px;
+    background-size: 55%;
+    opacity: 0;
+
+
+}
+*/
+
 
 
 /* seccion contacto*/
