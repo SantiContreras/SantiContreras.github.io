@@ -142,15 +142,15 @@ html {
 
 /*Contenido sobre mi*/
 .sobremi {
-   /* background: #EB5757;  
+    /* background: #EB5757;  
     background: -webkit-linear-gradient(to right, #000000, #EB5757);  
     background: linear-gradient(to right, #000000, #EB5757); */
-    
+
     background-color: #070707;
     color: #fff;
     padding: 50px 20px;
 
-  
+
 }
 
 .sobremi .contenido-sobremi {
@@ -238,7 +238,7 @@ html {
 
 .sobremi .button {
     cursor: pointer;
-    background-color:rgb(231, 29, 29);
+    background-color: rgb(231, 29, 29);
     display: block;
     width: 16%;
     height: 20%;
@@ -251,32 +251,29 @@ html {
     color: rgb(255, 254, 254);
     border-radius: 16px;
     z-index: 0;
-  
+
 
 
 }
 
-.sobremi .button::after{
+.sobremi .button::after {
     content: '';
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-        circle farthest-corner at 10% 20%,
-        rgba(255,5,66,1) 18%,
-        rgb(63, 236, 10) 100%
-
-    );
+    background: radial-gradient(circle farthest-corner at 10% 20%,
+            rgba(255, 5, 66, 1) 18%,
+            rgb(63, 236, 10) 100%);
     filter: blur(15px);
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-   
+
 }
 
 
 
-.sobremi .button:hover{
+.sobremi .button:hover {
     background-color: rgb(230, 207, 207);
 
 }
@@ -489,7 +486,7 @@ html {
     animation: 2s springsecurite forwards;
 }
 
-@keyframes springsecurite{
+@keyframes springsecurite {
     0% {
         width: 0%;
     }
@@ -504,7 +501,7 @@ html {
     animation: 2s mongodb forwards;
 }
 
-@keyframes mongodb{
+@keyframes mongodb {
     0% {
         width: 0%;
     }
@@ -519,7 +516,7 @@ html {
     animation: 2s angular forwards;
 }
 
-@keyframes angular{
+@keyframes angular {
     0% {
         width: 0%;
     }
@@ -534,7 +531,7 @@ html {
     animation: 2s git forwards;
 }
 
-@keyframes git{
+@keyframes git {
     0% {
         width: 0%;
     }
@@ -702,7 +699,7 @@ html {
     height: fit-content;
     margin: 10px;
     cursor: pointer;
-  
+
 }
 
 .portafolio .galeria .proyecto img {
@@ -725,7 +722,7 @@ html {
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
-   
+
 }
 
 .portafolio .galeria .proyecto .overlay h3 {
@@ -733,7 +730,7 @@ html {
     transition: 1s;
 }
 
-.portafolio .galeria .proyecto h3{
+.portafolio .galeria .proyecto h3 {
     font-size: 25px;
     color: rgba(90, 71, 71, 0.541);
     font-weight: bold;
@@ -749,43 +746,54 @@ html {
     color: #030303;
 }
 
-.portafolio .galeria .proyecto button{
-  border-radius: 18px;
-  width: 110px;
-  height: 35px;
-  position: relative;
-  margin-left: 35%;
-  margin-top: 10%;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  
-  
-  background-color: #29032b;
- 
+.portafolio .galeria .proyecto button {
+    border-radius: 20px;
+    width: 110px;
+    height: 40px;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10%;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+   
+    background-color: #5f0759;
+
 }
 
-.portafolio .galeria .proyecto button::after{
+.portafolio .galeria .proyecto button a {
+    text-decoration: none;
+    color: #ece8e8;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/*.portafolio .galeria .proyecto button::after {
     content: '';
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-        circle farthest-corner at 10% 20%,
-        rgba(255,5,66,1) 18%,
-        rgb(63, 236, 10) 100%
+    background: radial-gradient(circle farthest-corner at 10% 30%,
+            rgb(238, 139, 9) 50%,
+            rgb(236, 4, 4) 100%);
 
-    );
-    filter: blur(15px);
-    position:absolute;
+    filter: blur(5px);
+    position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    
-    
 
+
+
+}*/
+
+.portafolio .galeria .proyecto button:hover {
+    background-color: #800d67;
 }
+
+
 
 /*.portafolio .galeria .proyecto button::before{
     content: "";
@@ -819,20 +827,20 @@ html {
 .contacto {
 
 
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #0e0d0d;
 
-    color: aliceblue;
+    color: rgb(41, 43, 44);
     padding: 50px 0;
+  
+    
+   
 }
 
 .contacto .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    z-index: 0;
+   
 }
 
 .contacto h2 {
@@ -858,34 +866,60 @@ html {
     width: 100%;
     margin-bottom: 20px;
     background-color: #212e2e;
-    color: rgb(193, 207, 204);
+    color: rgb(226, 241, 238);
     border: none;
-    font-size: 15px;
+    font-size: 18px;
     padding: 18px;
+    border: none;
+    outline: none;
 
 
 }
 
 .contacto button {
-
+    display: flexbox;
+    margin-left: 25%;
+    width:50%;
+    height: 50%;
+    border: none;
+    outline: none;
+    color: rgb(219, 202, 202);
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: rgb(245, 4, 4);
     position: relative;
-    color: antiquewhite;
-    z-index: 10;
+    z-index: 0;
+     
 }
 
-.contacto button:hover {
+/*.contacto button::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+ 
 
-    transition: 1s;
-    background-color: cadetblue;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    filter: blur(5px);
+     
+    left: 0;
+    top: 0;
+    z-index:-1;
+
+    
+  
+}*/
+.contacto button:hover{
+    background-color: #f16a6a;
 }
+
+
+    
+
+
+
+
 
 .contacto .col img {
     width: 100%;
@@ -1017,13 +1051,13 @@ footer .arriba {
         width: fit-content;
     }
 
-    .skills .fila  {
+    .skills .fila {
         display: block;
     }
 
     .skills .fila .col {
         width: 100%;
-        
+
     }
 
     .skills .fila .col .barra-skill {
